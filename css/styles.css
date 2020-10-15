@@ -1,4 +1,10 @@
 @font-face {
+  font-family: 'Poiret One', cursive;
+  src: url("WebFont.eot");
+  src: url("WebFont.eot?#iefix") format("embedded-opentype"), url("WebFont.woff") format("woff"), url("WebFont.ttf") format("truetype"), url("WebFont.svg#webfont") format("svg");
+}
+
+@font-face {
   font-family: 'neoneonregular';
   src: url("neoneon-webfont.woff") format("woff");
   font-weight: normal;
@@ -38,9 +44,18 @@ img {
   background-size: cover;
   -webkit-box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.6);
           box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.6);
+  font-family: italic;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  font-family: 'neoneonregular';
+  font-size: 4rem;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  text-shadow: 0 0 10px #fff, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000;
+}
+
+h3 {
   margin-top: 5px;
   margin-bottom: 0px;
   text-shadow: 0 0 10px #fff, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000;
@@ -77,12 +92,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 0px;
   -ms-grid-columns: (minmax(250px, 2fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
-}
-
-.grid-item {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 3;
+  font-family: 'Poiret One', cursive;
 }
 
 .footer {
@@ -117,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Create four equal columns that floats next to each other */
 .column {
   float: left;
-  width: 18%;
+  width: 33%;
 }
 
 /* The Modal (background) */
@@ -241,53 +251,60 @@ img.hover-shadow {
 #contact {
   font-family: 'Teko', sans-serif;
   padding-top: 111px;
-  width: 100%;
   width: 100vw;
   color: #fff;
+  border-radius: 10px;
 }
 
 .section-content {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 .contact-section {
   padding-top: 3rem;
-}
-
-.contact-section .col-md-6 {
-  width: 50%;
-}
-
-.form-line {
-  border-right: 1px solid #B29999;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .form-group {
   margin-top: 10px;
-}
-
-label {
   font-size: 1.5em;
   line-height: 1em;
   font-weight: normal;
 }
 
 .form-control {
-  font-size: 1.5em;
-  color: #ffffff;
+  font-size: 2em;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
 }
 
 textarea.form-control {
-  height: 135px;
-  /* margin-top: px;*/
+  height: 8rem;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .submit {
-  font-size: 1.5em;
-  float: right;
+  font-size: 2em;
   width: 150px;
-  background-color: transparent;
-  color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  font-family: 'Poiret One', cursive;
+  color: #050505;
+}
+
+#placeholder {
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */
